@@ -8,3 +8,5 @@ for i in lijst:
         print(i)
 
         
+for i in range(12):
+    print('a')
