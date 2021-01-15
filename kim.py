@@ -10,3 +10,5 @@ for i in lijst:
         
 for i in range(12):
     print('a')
+
+# nog 1 ding uitproberen
