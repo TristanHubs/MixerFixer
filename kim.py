@@ -1,6 +1,5 @@
 # even testen - Kim
 
-
 lijst = [1, 2, 3, 4, 5]
 
 for i in lijst:
@@ -8,7 +7,8 @@ for i in lijst:
         print(i)
 
         
-for i in range(12):
+for i in range(2):
     print('a')
 
 # nog 1 ding uitproberen
+# haha
