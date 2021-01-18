@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Portfolio
+{% endblock %}
+
+{% block main %}
+    <div class="container">
+        <table class="table table-striped">
+            <thead></thead>
+                <tr>
+                    <th>Symbol</th>
+                    <th>Name</th>
+                    <th>Shares</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            {% for aandeel in aandelen %}
+                <tr>
+                    <td>{{ aandeel['symbol'].upper() }}</td>
+                    <td>{{ aandeel['name'] }}</td>
+                    <td>{{ aandeel['shares'] }}</td>
+                    <td>{{ "$%.2f" | format(aandeel['price']) }}</td>
+                    <td>{{ "$%.2f" | format(aandeel['total']) }}</td>
+                </tr>
+            {% endfor %}
+            <tr>
+                <td>CASH</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>{{ cash }}</td>
+            </tr>
+            <tr>
+                <td><strong>TOTAL</strong></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>{{ total }}</td>
+            </tr>
+        </table>
+    </div>
+{% endblock %}

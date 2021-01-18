@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quoted
+{% endblock %}
+
+{% block main %}
+
+<div class="container">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Name company</th>
+                <th>Price of share (in $)</th>
+                <th>Symbol</th>
+            </tr>
+        </thead>
+            <td> {{ name }} </td>
+            <td> {{ price }} </td>
+            <td> {{ symbol }} </td>
+    </table>
+</div>
+{% endblock %}
